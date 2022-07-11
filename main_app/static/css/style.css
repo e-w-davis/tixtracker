@@ -4,12 +4,17 @@
 }
 
 body {
-    background-color: blue;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
 
+body > header.navbar-fixed > nav > div.nav-wrapper > ul > li > a.left > img.logo {
+    max-width: 55px;
+    max-height: 55px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
 main {
     flex: 1 0 auto;
 }
@@ -17,4 +22,9 @@ main {
 footer {
     padding-top: 0;
     text-align: center;
+}
+
+@media (max-width: 500px) {
+    /* body > header.navbar-fixed > nav > div.nav-wrapper > ul > li > a.left > img.logo{
+    } */
 }
