@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block content %}
+{% if user.is_authenticated %}
+    <h1>Welcome</h1>
+{% else %}
+    <h1> Welcome to Tix Tracker</h1>
+
+    <h3>Create an account or login to start your journey or see your events</h3>
+    <hr />
+{% endif %}
+{% endblock %}
