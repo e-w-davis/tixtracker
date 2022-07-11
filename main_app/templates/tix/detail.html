@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {% block content %}
+<h1>Tix Details</h1>
+
+<div class="row">
+    <div class="col s6">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">{{ tix.event_name }}</span>
+                <p>Venue: {{ tix.venue }}</p>
+                <p>Location: {{ tix.location }}</p>
+                <p>Date: {{ tix.date }}</p>
+            </div>
+            <div class="card_action">
+                <form action="{% url 'tix_update' tix.id %}">
+                    <button type="submit">Edit</button>
+                </form>
+                <form action="{% url 'tix_delete' tix.id %}">
+                    <button type="submit">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

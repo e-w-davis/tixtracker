@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block content %}
+<h1>Event List</h1>
+
+{% for tix in tix %}
+
+<div class="card">
+    <a href="{% url 'detail' tix.id %}">
+        <div class="card-content">
+            <span class="card-title">{{ tix.event_name }}</span>
+            <p>Venue: {{ tix.venue }}</p>
+            <p>Location: {{ tix.location }}</p>
+            <p>Date: {{ tix.date }}</p>
+        </div>
+    </a>
+</div>
+
+{% endfor %}{% endblock %}
