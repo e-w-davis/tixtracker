@@ -25,14 +25,14 @@
                     <a class='right dropdown-trigger btn indigo accent-4' href='#' data-target='dropdown1'>Menu</a>
 
                     <ul id='dropdown1' class="dropdown-content">
-                        <li><a href="{% url 'about' %}">About</a></li>
+                        <li><a href="{% url 'about' %}"><span class="purple-text">About</span></a></li>
                         {% if user.is_authenticated %}
-                        <li><a href="{% url 'tix_create' %}">Add Tix</a></li>
-                        <li><a href="{% url 'index' %}">View all Tix</a></li>
-                        <li><a href="{% url 'logout'%}"><button type="submit">Log Out</button></a></li>
+                        <li><a href="{% url 'tix_create' %}"><span class="purple-text">Add Tix</span></a></li>
+                        <li><a href="{% url 'index' %}"><span class="purple-text">View all Tix</span></a></li>
+                        <li><a href="{% url 'logout'%}"><button type="submit"><span class="purple-text">Log Out</span></button></a></li>
                         {% else %}
-                        <li><a href="{% url 'signup'%}"><button type="submit">Sign Up</button></a></li>                    
-                        <li><a href="{% url 'login'%}"><button type="submit">Log In</button></a></li>
+                        <li><a href="{% url 'signup'%}"><button type="submit"><span class="purple-text">Sign Up</span></button></a></li>                    
+                        <li><a href="{% url 'login'%}"><button type="submit"><span class="purple-text">Log In</span></button></a></li>
                         {% endif %}
                     </ul>
                 </div>
