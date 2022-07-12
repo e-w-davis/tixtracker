@@ -23,8 +23,3 @@ footer {
     padding-top: 0;
     text-align: center;
 }
-
-@media (max-width: 500px) {
-    /* body > header.navbar-fixed > nav > div.nav-wrapper > ul > li > a.left > img.logo{
-    } */
-}
