@@ -24,20 +24,20 @@
                     <li><a href="{% url 'tix_create' %}">Add Tix</a></li>
                     <li><a href="{% url 'index' %}">View all Tix</a></li>
                     <li>
-                        <form action="{% url 'logout'%}">
+                        <a href="{% url 'logout'%}">
                             <button type="submit">Log Out</button>
-                        </form>
+                        </a>
                     </li>
                     {% else %}
                     <li>
-                        <form action="{% url 'signup'%}">
+                        <a href="{% url 'signup'%}">
                             <button type="submit">Sign Up</button>
-                        </form>
+                        </a>
                     </li>                    
                     <li>
-                        <form action="{% url 'login'%}">
+                        <a href="{% url 'login'%}">
                             <button type="submit">Log In</button>
-                        </form>
+                        </a>
                     </li>
                     {% endif %}
                 </ul>
