@@ -20,5 +20,25 @@
             </div>
         </div>
     </div>
+    <div class="col s12">
+        <div class="card">
+            {% for photo in tix.photo_set.all %}
+                <img class="responsive-img card-panel" src="{{photo.url}}">
+            {% empty %}
+                <div class="card-panel purple-text center-align">No Photos Uploaded</div>
+            {% endfor %}
+        </div>
+        <form
+            action="{% url 'add_photo' tix.id%}"
+            enctype="multipart/form-data"
+            method="POST"
+            class="card-panel"
+        >
+            {% csrf_token %}
+            <input type="file" name="photo-file" />
+            <br /><br />
+            <input type="submit" class="btn indigo accent-4" value="Upload Photo" />
+        </form>
+    </div>
 </div>
 {% endblock %}

@@ -9,5 +9,6 @@ urlpatterns = [
     path('tix/<int:tix_id>/', views.tix_detail, name='detail'),
     path('tix/<int:pk>/update', views.TixUpdate.as_view(), name='tix_update'),
     path('tix/<int:pk>/delete', views.TixDelete.as_view(), name='tix_delete'),
+    path('tix/<int:tix_id>/add_photo/', views.add_photo, name='add_photo'),
     path('accounts/signup/', views.signup, name='signup'),
 ]
