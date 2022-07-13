@@ -1,0 +1,18 @@
+<h1>Tix-Tracker</h1>
+</br>
+<p>This app was created to give users a centralized location to store their memories of past and future concerts</p>
+</br>
+<h2>Technologies Used</h2>
+</br>
+<p> Python, JavaScript, HTML, CSS, Django, postgreSQL, AWS, and Materialize</p>
+</br>
+<h2>Getting Started</h2>
+</br>
+<p><a href="https://tixtracker.heroku.com">Click here</a> to go to the website. Click the menu button in the upper right-hand corner and select sign up. </br>
+Then you can start adding the tix you have!</p>
+</br>
+<img src="./Tix Tracker.png">
+</br>
+<h2>Future Enhancement</h2>
+</br>
+<p>I would like to add the field of status so users can check off if they've been to or are planning on going to the concert.</p>
