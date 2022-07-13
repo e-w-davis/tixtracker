@@ -16,12 +16,24 @@ body > header.navbar-fixed > nav > div.nav-wrapper > ul > li > a.left > img.logo
     border-radius: 10px;
 }
 
+.datepicker-date-display {
+    background-color: purple;
+}
+
+.btn-flat {
+    color: purple;
+}
+
+.datepicker-table td.is-today {
+    background-color: purple;
+}
+
 body > main > img.background {
     position: absolute;
     top: 200px;
     left: 0;
-    
 }
+
 main {
     flex: 1 0 auto;
 }
