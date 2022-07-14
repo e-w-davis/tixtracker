@@ -58,7 +58,7 @@ def add_photo(request, tix_id):
 
 class TixCreate(CreateView):
     model = Tix
-    fields = ['event_name', 'venue', 'location', 'date', 'status']
+    fields = ['event_name', 'venue', 'location', 'date']
     success_url = '/tix/'
 
     def form_valid(self, form):
