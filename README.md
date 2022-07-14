@@ -8,7 +8,7 @@ Python, JavaScript, HTML, CSS, Django, postgreSQL, AWS, and Materialize
 
 ## Getting Started
 
-[Click here](https://tixtracker.heroku.com) to go to the website. Click the menu button in the upper right-hand corner and select sign up.
+[Click here](https://tix-tracker.heroku.com) to go to the website. Click the menu button in the upper right-hand corner and select sign up.
 Then you can start adding the tix you have!
 
 ![screenshot](https://i.imgur.com/X1NUZZj.png)
